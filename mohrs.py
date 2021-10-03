@@ -3,6 +3,8 @@ def mohcircle():
     import matplotlib.pyplot as plt
     import math
 
+    print('Enter the details: ')
+    
     σx = float(input('σx = '))
     σy = float(input('σy = '))
     τxy = float(input('τxy = '))
@@ -45,6 +47,7 @@ def mohcircle():
 
        ''')
 
+    print('Plot is showing now')
     plt.plot(x, y)
     plt.plot([σavg - R - 10, σavg + R + 10], [0, 0], linestyle='--', color='black')
     plt.plot([σavg, σavg], [-R - 10, R + 10], linestyle='--', color='black')
